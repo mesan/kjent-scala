@@ -2,12 +2,13 @@
 
 Formålet her er å bli bedre kjent med Scala, for å komme i gang videre.
 
-# SBT
+## SBT
 
 Kjør sbt herfra, eksekverbar fil ligger sammen med nødvendig launcher.
 
-# IDE
+## IDE
 
-Generer konfigfiler for ditt IDE fra sbt:
+Generer konfigfiler for ditt IDE (hhv IDEA eller Eclipse) fra sbt:
+
     gen-idea
     eclipse
