@@ -5,7 +5,7 @@ import org.junit.Assert._
 
 class PersonTest {
   @Test
-  def personShouldBeInitializedWithvalues {
+  def personShouldBeInitializedWithvalues() {
     val p = new Person("Trond Marius", "Øvstetun")
     assertNotNull(p)
     assertEquals("Trond Marius", p.firstname)
