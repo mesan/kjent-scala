@@ -1,6 +1,5 @@
 package no.mesan
 
-import losning.{Kasse, Puddel, Mat, Hund}
 import org.specs2.mutable.Specification
 
 /**
@@ -11,64 +10,63 @@ import org.specs2.mutable.Specification
 
 class ObjektorienteringSpec extends Specification {
 
-  /**
-   * 1. Lag en klasse Hund med feltene (val) navn (String), farge (String), bjeff(String), alder(Int)
-   */
   "Hund" should {
+    /**
+     * 1. Lag en klasse Hund med feltene (val) navn (String), farge (String), bjeff(String), alder(Int)
+     */
     "ha et navn, en farge sitt bjeff og sin alder" in {
-      val hund = new Hund("Fido", "Brun", "Voff", 3) {}
-      hund.navn must_== "Fido"
-      hund.farge must_== "Brun"
-      hund.lyd must_== "Voff"
+//      val hund = new Hund("Fido", "Brun", "Voff", 3)
+//      hund.navn must_== "Fido"
+//      hund.farge must_== "Brun"
+//      hund.lyd must_== "Voff"
+      pending
     }
-  }
 
-  /**
-   * 2. Variablen lyd skal være mulig å endre. Og det skal legges til '!!!' etter det som skrives inn.
-   */
-  "Hund" should  {
+      /**
+       * 2. Variablen lyd skal være mulig å endre. Og det skal legges til '!!!' etter det som skrives inn.
+       */
     "kunne bytte lyden den lager (med modifikasjon)" in {
-      val hund = new Hund("Frans", "Hvit", "Knurr", 13) {}
-      hund.lyd must_== "Knurr"
-
-      hund.lyd = "Voff"
-
-      hund.lyd must_==  "Voff!!!"
+//      val hund = new Hund("Frans", "Hvit", "Knurr", 13)
+//      hund.lyd must_== "Knurr"
+//
+//      hund.lyd = "Voff"
+//
+//      hund.lyd must_==  "Voff!!!"
+      pending
     }
-  }
 
-  /**
-   * 3. Hund skal overskrive toString(). Teksten skal være hundens navn + "the Dog"
-   */
-  "Hund" should  {
+    /**
+     * 3. Hund skal overskrive toString(). Teksten skal være hundens navn + "the Dog"
+     */
     "overskrive toString" in  {
-      val hund = new Hund("Balder", "Gråhvit", "Voff", 4){}
-
-      hund.toString() must_== "Balder - the Dog"
+//      val hund = new Hund("Balder", "Gråhvit", "Voff", 4)
+//
+//      hund.toString() must_== "Balder - the Dog"
+      pending
     }
   }
 
-  /**
-   * 4. Lag et trait: Spise med metoden spis(mat: Mat): String. Denne returnerer "Logre logre".
-   *    Lag en ny klasse Puddel som extender Hund med traitet Spise
-   */
   "Puddel" should {
+    /**
+     * 4. Lag et trait: Spise med metoden spis(mat: Mat): String. Denne returnerer "Logre logre".
+     *    Lag en ny klasse Puddel som extender Hund med traitet Spise
+     */
     "logre når den spiser mat" in {
-      val hund = new Puddel("Pluto", "Brun", "Voff", 50)
-
-      hund.spis(new Mat) must_== "Logre logre"
+//      val hund = new Puddel("Pluto", "Brun", "Voff", 50)
+//
+//      hund.spis(new Mat) must_== "Logre logre"
+      pending
     }
-  }
 
-  /**
-   * 5. Lag et trait Fillebikje for Hund (selftype) med metoden gneldre(): String som returnerer lyd tre ganger
-   *    etterhverandre. Ta i bruk traitet på  Puddel (uten å knekke forrige test).
-   */
-  "Puddel" should {
+    /**
+     * 5. Lag et trait Fillebikje for Hund (selftype) med metoden gneldre(): String som returnerer lyd tre ganger
+     *    etterhverandre. Ta i bruk traitet på  Puddel (uten å knekke forrige test).
+     */
     "gneldre..." in {
-      val hund = new Puddel("Tanja", "Svart", "Voff", 4)
-
-      hund.gneldre() must_== "VoffVoffVoff"
+//      val hund = new Puddel("Tanja", "Svart", "Voff", 4)
+//
+//      hund.gneldre() must_== "VoffVoffVoff"
+      pending
     }
   }
 
@@ -77,11 +75,10 @@ class ObjektorienteringSpec extends Specification {
    */
   "Kasse" should  {
     "inneholde en Hund" in {
-      val kasse = new Kasse(new Puddel("Tiril", "Blå", "Ynk", 6))
-
-      kasse.ting.navn must_== "Tiril"
+//      val kasse = new Kasse(new Puddel("Tiril", "Blå", "Ynk", 6))
+//
+//      kasse.ting.navn must_== "Tiril"
+      pending
     }
   }
-
-
 }
