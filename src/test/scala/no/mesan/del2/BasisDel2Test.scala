@@ -1,4 +1,5 @@
-package no.mesan
+package no.mesan.del2
+
 import org.junit.Test
 import org.junit.Assert._
 

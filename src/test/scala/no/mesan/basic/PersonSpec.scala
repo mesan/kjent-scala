@@ -1,4 +1,4 @@
-package no.mesan
+package no.mesan.basic
 
 import org.specs2.mutable.Specification
 
