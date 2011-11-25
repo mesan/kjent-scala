@@ -1,4 +1,4 @@
-package no.mesan.patternMatchingTest
+package no.mesan.patternmatching
 
 import junit.framework.Assert._
 import org.junit.Test
@@ -7,7 +7,7 @@ import org.junit.runners.JUnit4
 
 @RunWith(classOf[JUnit4])
 class TupleTestMatchTest extends EmptyTest {
-  
+
   // @Test
   def matchOnTupes {
     val simpleTuple: Any = (1, "string")
@@ -17,7 +17,7 @@ class TupleTestMatchTest extends EmptyTest {
       case _ => sys.error("Couldnt match it")
     }
   }
-  
+
   // @Test
   def matchOnTupesWithGuard {
     val simpleTuple: Any = (1, "string")
@@ -33,7 +33,7 @@ class TupleTestMatchTest extends EmptyTest {
   // @Test
   def matchOnLargerTuple{
     val simpleTuple: Any = (1, "string", false)
-    
+
     simpleTuple match {
       // Match on the tuple, and assert with assertFalse(three)
       case (one, two, three: String) => sys.error("this is not a Tuple3 with last element Boolean")

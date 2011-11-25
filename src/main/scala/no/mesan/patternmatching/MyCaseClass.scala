@@ -1,4 +1,4 @@
-package no.mesan.patternMatching
+package no.mesan.patternmatching
 
 sealed abstract class MyCaseClass
 case class FirstSubClass(value: Int) extends MyCaseClass
