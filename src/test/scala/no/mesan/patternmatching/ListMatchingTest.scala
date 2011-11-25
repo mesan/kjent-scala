@@ -14,12 +14,12 @@ class ListMatchingTest extends EmptyTest  {
   def matchFirstElementOfList {
 
     // matchedElement must find the first element. It can also skip the rest (if you want to)
-    val mathedElement = list match {
+    val matchedElement = list match {
       // Insert you match statement(s) here
       case _ => "failed"
     }
 
-    assertEquals(list(0), mathedElement)
+    assertEquals(list(0), matchedElement)
   }
 
   // @Test

@@ -2,8 +2,6 @@ package no.mesan.funksjoner
 
 import org.junit.Test
 import org.junit.Assert._
-import no.mesan.EmailAddress
-import no.mesan.Person2
 
 /**
  * @author JavaBin / Scalabin

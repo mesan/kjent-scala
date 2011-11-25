@@ -4,7 +4,6 @@ import junit.framework.Assert._
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
-import no.mesan.patternMatching._
 
 @RunWith(classOf[JUnit4])
 class MyCaseClassMatchingTest extends EmptyTest {
