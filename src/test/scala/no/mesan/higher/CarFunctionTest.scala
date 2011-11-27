@@ -41,7 +41,7 @@ class CarFunctionTest {
   @Test
   def bottomLine {
     val taxes= cars.map(_.calculateTax(taxMap, ageReductionFactor))
-    val total= 0  // Summer verdiene i taxes -- hint: reduceLeft
+    val total= 0  // Summer verdiene i taxes vha reduceLeft (ikke lov å bruke sum)
     assertEquals(348950, total)
   }
 }

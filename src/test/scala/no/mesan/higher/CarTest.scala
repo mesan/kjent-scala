@@ -11,25 +11,25 @@ class CarTest {
 
   @Test
   def gamleBiler {
+    // Plukk ut alle biler produsert i forrige århundre
     val ids= List() // Hint: cars.??????.map(sirWhiz)
     assertEquals(3, ids.length)
     assertTrue(ids.contains("IDVW2"))
   }
 
   @Test
-  def ingenEkteTraktor {
-    val traktor: Option[Car]= None // cars.????
-    assertEquals("IDLADA", sirWhiz(traktor.getOrElse(Lada)))
-  }
-
-  @Test
   def sorterEtterAlder {
+    // Sorter bilene etter alder
     val liste= List() // cars.??????
     assertEquals(List(Bmw, Vw, Toyota, Jaguar, Audi), liste.take(5))
   }
 
   @Test
   def delEtterAlder {
+    // Vi skal parkere bilene på 2 rekker.  For å se mest mulig oppdatert ut, vil vi ha
+    // de nyeste bilene på første rad.
+    // Sorter bilene etter alder, og del listen i 2 like deler
+    // (ved oddetall settes den ekstra på første rad)
     val (gamleBiler, nyeBiler)= (List(), List()) // ????????????
     assertEquals(4, gamleBiler.length)
     assertEquals(5, nyeBiler.length)

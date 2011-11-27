@@ -18,7 +18,7 @@ object wordList {
 class Anagram(word: String) {
   def findAnagrams: Set[String] = Set()
 
-  // Hint: trekk første bokstav blant bokstavene (inntil alle er prøvd)
+  // Hint: trekk første bokstav blant alle bokstavene i ordet (inntil alle er prøvd)
   //  Rekursjon: trekk andre bokstav blant de resterende
   //   Osv...
   // For å spare tid, kan det jo være lurt å sjekke at det finnes ord som begynner på det man har valgt så langt

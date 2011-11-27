@@ -5,6 +5,8 @@ import org.junit.Test
 
 class AnagramTest {
 
+  // For å få denne opp må du fikse på Anagram-klassen
+
   @Test
   def ordUtenforOrdlisteGirIngenTreff { assertEquals(0, new Anagram("heks").findAnagrams.size) }
 
