@@ -10,8 +10,8 @@ class InteropScalaTest {
   
   @Before
   def lagPersoner {
-    jp = new JPerson("Buster", "Minal") // lag person "Buster Minal"
-    sp = new SPerson("Buster", "Minal") // lag person "Buster Minal"
+    jp = null // lag person "Buster Minal"
+    sp = null // lag person "Buster Minal"
   }
 
   @Test
