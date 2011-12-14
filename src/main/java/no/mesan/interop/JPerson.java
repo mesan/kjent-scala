@@ -11,21 +11,4 @@ public class JPerson {
         this.lastname = lastname;
     }
 
-    public String getFirstname() {
-        return firstname;
-    }
-    public String getLastname() {
-        return lastname;
-    }
-    
-    public String firstname() {
-        return firstname;
-    }
-    public void firstname_$eq(String firstname) {
-        this.firstname = firstname;
-    }
-
-    public Tuple2<String, String> navn() {
-        return new Tuple2(firstname, lastname);
-    }
 }

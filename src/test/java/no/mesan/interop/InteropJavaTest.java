@@ -30,8 +30,9 @@ public class InteropJavaTest {
 
     @Test
     public void hentNavnFraJavaPerson() {
-        assertEquals("Buster", jp.getFirstname());
-        assertEquals("Minal", jp.getLastname());
+//        assertEquals("Buster", jp.getFirstname());
+//        assertEquals("Minal", jp.getLastname());
+        fail("ikke implementert");
     }
 
     @Test
