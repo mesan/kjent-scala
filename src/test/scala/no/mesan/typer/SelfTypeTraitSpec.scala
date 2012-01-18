@@ -1,5 +1,7 @@
 package no.mesan.typer
 
+import org.specs2.mutable.Specification
+
 
 trait Foo {
   def bar = "bar"
@@ -14,7 +16,7 @@ trait FooBar {
 
 class FooBarImpl extends FooBar
 
-class SelfTypeTraitSpec {
+class SelfTypeTraitSpec extends Specification {
   "FooBar" should {
     "kunne instansieres anonymt" in {
       val f = new FooBar {}
